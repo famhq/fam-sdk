@@ -1,0 +1,59 @@
+{
+  "name": "starfire-sdk",
+  "version": "0.0.1",
+  "private": true,
+  "description": "Starfire SDK",
+  "scripts": {
+    "build": "node_modules/gulp/bin/gulp.js build",
+    "demo": "node_modules/gulp/bin/gulp.js demo"
+  },
+  "author": "Clay.io",
+  "devDependencies": {
+    "bluebird": "^3.5.0",
+    "coffee-loader": "^0.8.0",
+    "css-loader": "^0.28.5",
+    "envify": "^4.1.0",
+    "express": "^4.15.4",
+    "gulp": "^3.9.1",
+    "gulp-clean": "^0.3.2",
+    "gulp-coffeelint": "^0.6.0",
+    "gulp-nodemon": "^2.2.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-run-sequence": "^0.3.2",
+    "gulp-webpack": "^1.5.0",
+    "json-loader": "^0.5.7",
+    "lodash": "^4.17.4",
+    "loglevel": "^1.4.1",
+    "rewire": "^2.5.2",
+    "rewire-webpack": "^1.0.1",
+    "style-loader": "^0.18.2",
+    "stylus-loader": "^3.0.1",
+    "transform-loader": "^0.2.4",
+    "webpack": "^1.12.4",
+    "webpack-dev-server": "^1.12.1",
+    "webpack-stream": "^2.1.0"
+  },
+  "dependencies": {
+    "coffee-script": "^1.12.7",
+    "portal-gun": "git://github.com/claydotio/portal-gun.git",
+    "promiz": "^1.0.5",
+    "zorium": "git://github.com/claydotio/zorium.git"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/claydotio/starfire-sdk.git"
+  },
+  "keywords": [
+    "starfi.re",
+    "sdk",
+    "starfire"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/claydotio/starfire-sdk/issues"
+  },
+  "homepage": "https://github.com/claydotio/starfire-sdk"
+}

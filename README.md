@@ -1,8 +1,8 @@
-## Starfi.re SDK
+# Starfi.re SDK
 
 Starfi.re SDK
 
-### Install
+## Install
 
 Add to the top of `<body>`  
 Replace `xxxx-xxxx-xxxx-xxxx` with your appId
@@ -18,7 +18,7 @@ Starfire('init', {appId: 'xxxx-xxxx-xxxx-xxxx'})
 </script>
 ```
 
-### Example
+## Example
 
 ```js
 Starfire('init', {appId: 'xxxx-xxxx-xxxx-xxxx'})
@@ -29,17 +29,17 @@ Starfire('client.clashRoyale.player.getMe', function (err, me) {
 // Starfire('client.forum.share', {text: 'I won a game!'})
 ```
 
-### SDK Usage
+## SDK Usage
 
-##### Init
+#### Init
 
 ```js
 Starfire('init', {appId: 'xxxx-xxxx-xxxx-xxxx'})
 ```
 
-##### Player
+#### Player
 
-###### client.clashRoyale.player.getme
+##### client.clashRoyale.player.getme
 
 Gets information about the current logged in user
 
@@ -49,7 +49,7 @@ Gets information about the current logged in user
 Starfire('client.clashRoyale.player.getMe', function (err, me) {})
 ```
 
-###### client.clashRoyale.player.getByTag
+##### client.clashRoyale.player.getByTag
 
 Gets information about a given user
 
@@ -61,9 +61,9 @@ Gets information about a given user
 Starfire('client.clashRoyale.player.getByTag', function (err, me) {})
 ```
 
-##### Matches (battles)
+#### Matches (battles)
 
-###### client.clashRoyale.match.getAllByTag
+##### client.clashRoyale.match.getAllByTag
 
 Gets last 10 matches for a given tag
 
@@ -75,9 +75,9 @@ Gets last 10 matches for a given tag
 Starfire('client.clashRoyale.match.getByTag', function (err, me) {})
 ```
 
-##### Decks
+#### Decks
 
-###### client.clashRoyale.deck.getAllByTag
+##### client.clashRoyale.deck.getAllByTag
 
 Gets last 10 decks for a given tag
 
@@ -89,7 +89,7 @@ Gets last 10 decks for a given tag
 Starfire('client.clashRoyale.deck.getByTag', function (err, me) {})
 ```
 
-##### Version
+#### Version
 
 ```js
 Starfire('version', function (err, version) {
@@ -97,19 +97,19 @@ Starfire('version', function (err, version) {
 })
 ```
 
-#### Coming soon
+### Coming soon
 client.matches.getAllById, client.forum.share
 
-### SDK UI Usage
+## SDK UI Usage
 
 SDK UI calls may return an SDK UI element, which has a DOM node ($el) that may
 be appended to the DOM. E.g. `ad.$el`
 
 **Coming soon**
 
-### Contributing
+## Contributing
 
-##### Install pre-commit hook
+#### Install pre-commit hook
 
 `ln -s ../../pre-commit.sh .git/hooks/pre-commit`
 

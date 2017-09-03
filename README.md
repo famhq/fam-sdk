@@ -98,14 +98,12 @@ Starfire('version', function (err, version) {
 ```
 
 ### Coming soon
-client.matches.getAllById, client.forum.share
+client.forum.share
 
-## SDK UI Usage
+## SDK UI Usage (coming soon)
 
 SDK UI calls may return an SDK UI element, which has a DOM node ($el) that may
 be appended to the DOM. E.g. `ad.$el`
-
-**Coming soon**
 
 ## Contributing
 

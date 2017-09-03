@@ -72,8 +72,7 @@ methods = {
           params[0].appId = config.appId
           params[0].accessToken = config.accessToken
 
-        console.log 'call', method, params
-        return portal.call method, params
+        return portal.call method, params...
     )
     .then (x) -> cb null, x
     .catch cb

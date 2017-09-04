@@ -9,9 +9,9 @@ Replace `xxxx-xxxx-xxxx-xxxx` with your appId
 
 ```html
 <script>
-(function(S,t,a,r,f,i,r,e){S[f]=S[f]||function(){
+(function(S,t,a,r,f,i,re){S[f]=S[f]||function(){
 (S[f].q=S[f].q||[]).push(arguments)},S[f].l=1*new Date();i=t.createElement(a),
-r=t.getElementsByTagName(a)[0];i.async=1;i.src=r;r.parentNode.insertBefore(i,r)
+re=t.getElementsByTagName(a)[0];i.async=1;i.src=r;re.parentNode.insertBefore(i,re)
 })(window,document,'script','//cdn.wtf/sdk/v1/starfire_sdk.js','Starfire');
 
 Starfire('init', {appId: 'xxxx-xxxx-xxxx-xxxx'})

@@ -36,7 +36,7 @@ methods = {
 
     portal.listen()
 
-    unless typeof appId is 'string' and /^[0-9]+$/.test appId
+    unless typeof appId is 'string' and /^[a-z0-9-]+$/.test appId
       return cb new Error 'Missing or invalid appId'
 
     initHasBeenCalled = true
@@ -97,9 +97,10 @@ portal.on 'share.any', ({text} = {}) ->
 
 module.exports = Starfire
 
+q = window.Starfire?.q
 # Initialize, allowing time for synchronous registration of services
 window.setTimeout ->
-  q = window.Starfire?.q or []
+  q or= window.Starfire?.q or []
 
   window.Starfire = Starfire
   for call in q

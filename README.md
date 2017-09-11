@@ -1,6 +1,6 @@
 # Starfi.re SDK
 
-Starfi.re SDK
+If you're looking for inspiration, see [IDEAS.md](IDEAS.md)
 
 ## Install
 
@@ -26,7 +26,6 @@ Starfire('init', {appId: 'xxxx-xxxx-xxxx-xxxx'})
 Starfire('client.clashRoyale.player.getMe', function (err, me) {
   console.log(me);
 })
-// Starfire('client.forum.share', {text: 'I won a game!'})
 ```
 
 ## SDK Usage
@@ -333,12 +332,11 @@ Starfire('version', function (err, version) {
 ```
 
 ### Coming soon
-client.forum.share
+client.forum.share, client.chat.share
 
 ## SDK UI Usage (coming soon)
 
-SDK UI calls may return an SDK UI element, which has a DOM node ($el) that may
-be appended to the DOM. E.g. `ad.$el`
+SDK UI calls may return an SDK UI element, which has a DOM node ($el) that may be appended to the DOM. E.g. `miniProfile.$el`
 
 ## Contributing
 

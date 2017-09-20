@@ -27,6 +27,9 @@ For these calls to work, the SDK needs to be framed within Starfire. You can tes
 ## Getting an appId
 Email me (austin@clay.io) and I'll get you setup.
 
+## Demo addon
+You can find a demo addon [here](https://github.com/starfirehq/starfire-matches-addon). Feel free to improve on that if you want it to make it into Starfire :)
+
 ## SDK Usage
 
 #### Init

@@ -1,6 +1,10 @@
 # Starfi.re SDK
 
-If you're looking for inspiration, see [IDEAS.md](IDEAS.md)
+The goal with Starfire is to build an open community for mobile gamers, starting with Clash Royale. Read [the manifesto](https://github.com/starfirehq/starfire/blob/master/README.md) for more info.
+
+A big part of that involves empowering other developers to take advantage of the amount of users on Starfire and build cool tools. Developers keep 100% of ad revenue in their tools.
+
+If you're looking for inspiration, see [IDEAS.md](IDEAS.md).
 
 ## Install
 

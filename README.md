@@ -37,7 +37,7 @@ Starfire('init', {appId: 'xxxx-xxxx-xxxx-xxxx'})
 
 #### Player
 
-##### client.clashRoyale.player.getme
+##### client.clashRoyale.player.getMe
 
 Gets information about the current logged in user
 
@@ -121,7 +121,7 @@ Gets information about a given user
 // @param {Object} params
 // @param {String} params.tag
 // @param {Function} callback
-Starfire('client.clashRoyale.player.getByTag', function (err, player) {
+Starfire('client.clashRoyale.player.getByTag', {tag: 'PCV8'}, function (err, player) {
   console.log(player);
 })
 
@@ -200,7 +200,7 @@ Gets last 10 matches for a given tag
 // @param {Object} params
 // @param {String} params.tag
 // @param {Function} callback
-Starfire('client.clashRoyale.match.getByTag', function (err, matches) {
+Starfire('client.clashRoyale.match.getByTag', {tag: 'PCV8'}, function (err, matches) {
   console.log(matches);
 })
 
@@ -271,7 +271,7 @@ Gets last 10 decks for a given tag
 // @param {Object} params
 // @param {String} params.tag
 // @param {Function} callback
-Starfire('client.clashRoyale.deck.getByTag', function (err, decks) {
+Starfire('client.clashRoyale.deck.getByTag, {tag: 'PCV8'}', function (err, decks) {
   console.log(decks);
 })
 

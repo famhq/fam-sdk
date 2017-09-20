@@ -196,11 +196,11 @@ example response:
 Gets last 10 matches for a given tag
 
 ```js
-// client.clashRoyale.match.getByTag
+// client.clashRoyale.match.getAllByTag
 // @param {Object} params
 // @param {String} params.tag
 // @param {Function} callback
-Starfire('client.clashRoyale.match.getByTag', {tag: 'PCV8'}, function (err, matches) {
+Starfire('client.clashRoyale.match.getAllByTag', {tag: 'PCV8'}, function (err, matches) {
   console.log(matches);
 })
 
@@ -267,11 +267,11 @@ example response:
 Gets last 10 decks for a given tag
 
 ```js
-// client.clashRoyale.deck.getByTag
+// client.clashRoyale.deck.getAllByTag
 // @param {Object} params
 // @param {String} params.tag
 // @param {Function} callback
-Starfire('client.clashRoyale.deck.getByTag, {tag: 'PCV8'}', function (err, decks) {
+Starfire('client.clashRoyale.deck.getAllByTag', {tag: 'PCV8'}, function (err, decks) {
   console.log(decks);
 })
 

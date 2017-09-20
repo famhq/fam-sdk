@@ -9,7 +9,7 @@ If you're looking for inspiration, see [IDEAS.md](IDEAS.md).
 ## Install
 
 Add to the top of `<body>`  
-Replace `xxxx-xxxx-xxxx-xxxx` with your appId
+Replace `xxxx-xxxx-xxxx-xxxx` with your appId.
 
 ```html
 <script>
@@ -22,15 +22,10 @@ Starfire('init', {appId: 'xxxx-xxxx-xxxx-xxxx'})
 </script>
 ```
 
-## Example
+For these calls to work, the SDK needs to be framed within Starfire. You can test this with `https://starfi.re/addon?testUrl=https://yoursite.com`. I've considered making a REST API for use outside of Starfire, but I'm holding off on it since Supercell announced they are working on an official API.
 
-```js
-Starfire('init', {appId: 'xxxx-xxxx-xxxx-xxxx'})
-
-Starfire('client.clashRoyale.player.getMe', function (err, me) {
-  console.log(me);
-})
-```
+## Getting an appId
+Email me (austin@clay.io) and I'll get you setup.
 
 ## SDK Usage
 

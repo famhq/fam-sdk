@@ -334,7 +334,13 @@ Starfire('version', function (err, version) {
 ```
 
 ### Coming soon
-client.forum.share, client.chat.share
+- client.clashRoyale.user.getAllByTag
+- user info (verified and others sorted by lastActiveTime) in player.getByTag
+- client.clashRoyale.userRecord.getAllByTag
+- client.clashRoyale.clanRecord.getAllByClanTag
+- route to profile (or just route in general to a path)
+- client.forum.share
+- client.chat.share
 
 ## SDK UI Usage (coming soon)
 

@@ -6,7 +6,9 @@ TWEET_LENGTH = 140
 VERSION = 'v0.0.1'
 
 config = new Promise (@resolve, @reject) => null
-portal = new PortalGun {trusted: TRUSTED_DOMAIN, subdomains: true}
+portal = new PortalGun {
+  trusted: TRUSTED_DOMAIN, useSw: false
+}
 initHasBeenCalled = false
 
 Starfire = (method, params, cb = -> null) ->

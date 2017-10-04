@@ -8,8 +8,11 @@ Starfire 'client.clashRoyale.player.getMe', (err, me) ->
 Starfire 'client.clashRoyale.player.getByTag', {tag: 'PCV8'}, (err, player) ->
   console.log 'player', player, err
 
-Starfire 'client.clashRoyale.user.getAllByPlayerTag', {playerTag: 'PCV8'}, (err, users) ->
+Starfire 'client.clashRoyale.user.getAllByPlayerTag', {playerTag: '22CJ9CQC0'}, (err, users) ->
   console.log 'users', users, err
+
+Starfire 'client.clashRoyale.clan.getByTag', {tag: 'YU2RQG9'}, (err, clan) ->
+  console.log 'clan', clan, err
 
 Starfire 'client.clashRoyale.match.getAllByTag', {limit: 10, tag: 'PCV8'}, (err, matches) ->
   console.log 'matches', matches, err
@@ -25,6 +28,7 @@ Starfire 'client.clashRoyale.userRecord.getAllByTag', {limit: 10, tag: 'PCV8'}, 
 
 Starfire 'client.clashRoyale.clanRecord.getAllByTag', {limit: 10, tag: 'YU2RQG9'}, (err, clanRecords) ->
   console.log 'clanRecords', clanRecords, err
+
 #
 # # TODO:
 # Starfire 'client.clashRoyale.deck.getById', {

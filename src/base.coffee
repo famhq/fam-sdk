@@ -11,7 +11,7 @@ portal = new PortalGun {
 }
 initHasBeenCalled = false
 
-Starfire = (method, params, cb = -> null) ->
+Fam = (method, params, cb = -> null) ->
   if typeof params is 'function'
     cb = params
     params = []
@@ -63,7 +63,7 @@ methods = {
 
     (do ->
       unless initHasBeenCalled
-        return Promise.reject new Error 'Must call Starfire(\'init\') first'
+        return Promise.reject new Error 'Must call Fam(\'init\') first'
 
       config.then (config) ->
         unless Object::toString.call(params) is '[object Array]'
@@ -97,13 +97,13 @@ portal.on 'share.any', ({text} = {}) ->
 
   return tweet(text)
 
-module.exports = Starfire
+module.exports = Fam
 
-q = window.Starfire?.q
+q = window.Fam?.q
 # Initialize, allowing time for synchronous registration of services
 window.setTimeout ->
-  q or= window.Starfire?.q or []
+  q or= window.Fam?.q or []
 
-  window.Starfire = Starfire
+  window.Fam = Fam
   for call in q
-    Starfire.apply 0, call
+    Fam.apply 0, call

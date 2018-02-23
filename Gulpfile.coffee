@@ -56,7 +56,7 @@ gulp.task 'scripts:prod', ->
   gulp.src paths.root
   .pipe webpackStream
     output:
-      library: 'Starfire'
+      library: 'Fam'
     module:
       # postLoaders: [
       #   { test: /\.coffee$/, loader: 'transform/cacheable?envify' }
@@ -71,5 +71,5 @@ gulp.task 'scripts:prod', ->
     ]
     resolve:
       extensions: ['.coffee', '.js', '.json', '']
-  .pipe rename 'starfire_sdk.js'
+  .pipe rename 'fam_sdk.js'
   .pipe gulp.dest paths.dist

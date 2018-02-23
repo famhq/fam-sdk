@@ -1,8 +1,8 @@
 # Starfi.re SDK
 
-The goal with Starfire is to build an open community for mobile gamers, starting with Clash Royale. Read [the manifesto](https://github.com/starfirehq/starfire/blob/master/README.md) for more info.
+The goal with Fam is to build an open community for mobile gamers, starting with Clash Royale. Read [the manifesto](https://github.com/famhq/fam/blob/master/README.md) for more info.
 
-A big part of that involves empowering other developers to take advantage of the amount of users on Starfire and build cool tools. Developers keep 100% of ad revenue in their tools.
+A big part of that involves empowering other developers to take advantage of the amount of users on Fam and build cool tools. Developers keep 100% of ad revenue in their tools.
 
 If you're looking for inspiration, see [IDEAS.md](IDEAS.md).
 
@@ -16,26 +16,23 @@ Replace `xxxx-xxxx-xxxx-xxxx` with your appId.
 (function(S,t,a,r,f,i,re){S[f]=S[f]||function(){
 (S[f].q=S[f].q||[]).push(arguments)},S[f].l=1*new Date();i=t.createElement(a),
 re=t.getElementsByTagName(a)[0];i.async=1;i.src=r;re.parentNode.insertBefore(i,re)
-})(window,document,'script','//cdn.wtf/sdk/v1/starfire_sdk.js','Starfire');
+})(window,document,'script','//cdn.wtf/sdk/v1/fam_sdk.js','Fam');
 
-Starfire('init', {appId: 'xxxx-xxxx-xxxx-xxxx'})
+Fam('init', {appId: 'xxxx-xxxx-xxxx-xxxx'})
 </script>
 ```
 
-For these calls to work, the SDK needs to be framed within Starfire. You can test this with `https://starfi.re/addon?testUrl=https://yoursite.com`. I've considered making a REST API for use outside of Starfire, but I'm holding off on it since Supercell announced they are working on an official API.
+For these calls to work, the SDK needs to be framed within Fam. You can test this with `https://starfi.re/addon?testUrl=https://yoursite.com`. I've considered making a REST API for use outside of Fam, but I'm holding off on it since Supercell announced they are working on an official API.
 
 ## Getting an appId
 Email me (austin@clay.io) and I'll get you setup.
-
-## Demo addon
-You can find a demo addon [here](https://github.com/starfirehq/starfire-matches-addon). Feel free to improve on that if you want it to make it into Starfire :)
 
 ## SDK Usage
 
 #### Init
 
 ```js
-Starfire('init', {appId: 'xxxx-xxxx-xxxx-xxxx'})
+Fam('init', {appId: 'xxxx-xxxx-xxxx-xxxx'})
 ```
 
 #### Player
@@ -47,7 +44,7 @@ Gets information about the current logged in user
 ```js
 // client.clashRoyale.player.getMe
 // @param {Function} callback
-Starfire('client.clashRoyale.player.getMe', function (err, me) {
+Fam('client.clashRoyale.player.getMe', function (err, me) {
   console.log(me)
 })
 
@@ -124,7 +121,7 @@ Gets information about a given user
 // @param {Object} params
 // @param {String} params.tag
 // @param {Function} callback
-Starfire('client.clashRoyale.player.getByTag', {tag: 'PCV8'}, function (err, player) {
+Fam('client.clashRoyale.player.getByTag', {tag: 'PCV8'}, function (err, player) {
   console.log(player);
 })
 
@@ -203,7 +200,7 @@ Gets last 10 matches for a given tag
 // @param {Object} params
 // @param {String} params.tag
 // @param {Function} callback
-Starfire('client.clashRoyale.match.getAllByTag', {tag: 'PCV8'}, function (err, matches) {
+Fam('client.clashRoyale.match.getAllByTag', {tag: 'PCV8'}, function (err, matches) {
   console.log(matches);
 })
 
@@ -274,7 +271,7 @@ Gets last 10 decks for a given tag
 // @param {Object} params
 // @param {String} params.tag
 // @param {Function} callback
-Starfire('client.clashRoyale.deck.getAllByTag', {tag: 'PCV8'}, function (err, decks) {
+Fam('client.clashRoyale.deck.getAllByTag', {tag: 'PCV8'}, function (err, decks) {
   console.log(decks);
 })
 
@@ -328,7 +325,7 @@ example response:
 #### Version
 
 ```js
-Starfire('version', function (err, version) {
+Fam('version', function (err, version) {
   console.log(version);
 })
 ```

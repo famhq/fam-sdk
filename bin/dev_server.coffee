@@ -19,7 +19,7 @@ new WebpackDevServer webpack({
   entry: entries
   output:
     path: __dirname,
-    filename: 'starfire_sdk.js',
+    filename: 'fam_sdk.js',
     publicPath: "//#{webpackDevHostname}:#{webpackDevPort}/"
   devtool: '#inline-source-map'
   module:
@@ -40,6 +40,7 @@ new WebpackDevServer webpack({
   publicPath: "//#{webpackDevHostname}:#{webpackDevPort}/"
   public: "#{webpackDevHostname}:#{webpackDevPort}"
   hot: true
+  disableHostCheck: true
 .listen webpackDevPort, (err) ->
   if err
     log.trace err

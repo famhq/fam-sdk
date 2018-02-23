@@ -1,8 +1,8 @@
 {
-  "name": "starfire-sdk",
+  "name": "fam-sdk",
   "version": "0.0.1",
   "private": true,
-  "description": "Starfire SDK",
+  "description": "Fam SDK",
   "scripts": {
     "build": "node_modules/gulp/bin/gulp.js build",
     "demo": "node_modules/gulp/bin/gulp.js demo"
@@ -44,16 +44,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/claydotio/starfire-sdk.git"
+    "url": "https://github.com/famhq/fam-sdk.git"
   },
   "keywords": [
-    "starfi.re",
+    "openfam",
     "sdk",
-    "starfire"
+    "fam"
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/claydotio/starfire-sdk/issues"
+    "url": "https://github.com/famhq/fam-sdk/issues"
   },
-  "homepage": "https://github.com/claydotio/starfire-sdk"
+  "homepage": "https://github.com/famhq/fam-sdk"
 }
